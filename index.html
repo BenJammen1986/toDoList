@@ -21,18 +21,35 @@
 
     <script src="js/scripts.js" type="text/javascript"></script>
 
-    <title></title>
+    <title>To Do List</title>
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
         <div class="col-md-4">
-
+          <form id="toDoList">
+            <div class="form-group">
+              <label for="tasks">Name of task</label>
+              <input id="tasks" class="form-control">
+              <label for="dueDate">Due date of task</label>
+              <input id="dueDate" class="form-control" type="date">
+              <label for="tasks">Task Notes</label>
+              <input id="tasks" class="form-control">
+              <label for="taskType">Type of task</label>
+              <select class="form-control" id="taskType">
+                <option value="1">School</option>
+                <option value="2">Work</option>
+                <option value="3">Home</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-default btn-success btn-block btn-lg">Add Task</button>
+          </form>
         </div>
         <div class="col-md-8">
+          <div id="displayList">
+          </div>
         </div>
-
+        </div>
       </div>
-    </div>
-  </body>
-</html>
+    </body>
+  </html>
